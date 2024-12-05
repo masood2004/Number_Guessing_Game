@@ -1,7 +1,10 @@
 import os
+import sys
 from art import logo
+from art import thanks
 import random
 
+os.system('cls')
 print(logo)
 print("Welcome to Number Guessing Game!")
 
@@ -49,5 +52,6 @@ while True:
     print(logo)
     print("Welcome to Number Guessing Game!")
     if play_again != 'y':
-        print("Thanks for playing!")
+        os.system("cls")
+        input(thanks)
         break
